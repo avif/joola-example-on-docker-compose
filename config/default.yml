@@ -10,7 +10,7 @@ stores:
   datastore:
       mongodb:
         enabled: true
-        host: mongodb://localhost:27018/joola
+        host: mongodb://localhost:27017/joola
 #      elasticsearch:
 #        enabled: true
 #        host: localhost:9200
