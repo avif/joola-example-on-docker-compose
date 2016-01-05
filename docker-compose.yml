@@ -1,0 +1,25 @@
+joola:
+  image: joola/joola
+  ports:
+   - "8080:8080"
+  volumes:
+   - ./config:/opt/joola/bin/config
+  links:
+   - redis
+   - db
+
+redis:
+  image: redis
+  ports:
+   - "6379:6379"
+
+db:
+ image: mongo
+ ports:
+  - "27018:27017"
+
+#db:
+# image: elasticsearch
+# ports:
+#  - "9200:9200"
+#  - "9300:9300"
