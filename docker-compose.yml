@@ -16,7 +16,7 @@ redis:
 db:
  image: mongo
  ports:
-  - "27018:27017"
+  - "27017:27017"
 
 #db:
 # image: elasticsearch
