@@ -3,17 +3,17 @@ interfaces:
   webserver:
     keyfile: /opt/joola/bin/config/certs/server.key
     certfile: /opt/joola/bin/config/certs/server.crt
-stores:
+store:
   config:
     redis:
       host: 6379
   datastore:
       mongodb:
         enabled: true
-        host: mongodb://localhost:27017/joola
+        dsn: mongodb://db:27017/joola
 #      elasticsearch:
 #        enabled: true
-#        host: localhost:9200
+#        host: db:9200
 workspaces:
   demo:
     key: demo
